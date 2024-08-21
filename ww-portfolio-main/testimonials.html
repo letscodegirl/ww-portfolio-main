@@ -1,0 +1,120 @@
+---
+layout: default
+banner_image_path: /images/mba3.png
+icon1_path: /images/icons/flash.png
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Your Website Title</title>
+  <style>
+    /* Base styles */
+    .padded {
+      padding: 20px;
+    }
+
+    .text-center {
+      text-align: center;
+    }
+
+    /* Responsive styles */
+    @media (max-width: 768px) {
+      .grid-middle {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .col-*,  /* Target all grid columns with class starting with "col-" */
+        .hero-div,
+        .text-background,
+        .text-background-2 {
+        width: 100%;  /* Set width to 100% for smaller screens */
+        padding: 15px;  /* Adjust padding for better spacing */
+      }
+
+      .hero-title {
+        font-size: 1.2em;
+      }
+
+      .hero-text {
+        font-size: 0.9em;
+      }
+
+      .padded-b-2 {
+        padding-bottom: 10px;
+      }
+
+      .bg-image {
+        background-size: cover;
+      }
+
+      .bg-meeting {
+        height: 200px;
+      }
+
+      .bg-plant-2 {
+        height: 300px;
+      }
+
+      .super-small-text {
+        font-size: 0.8em;
+      }
+
+      .hide-sm {  /* Hide elements on small screens */
+        display: none;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .hero-title {
+        font-size: 1.2em;
+      }
+
+      .hero-text {
+        font-size: 0.9em;
+      }
+    }
+
+    /* Image scaling */
+    img {
+      max-width: 100%;  /* Set max-width for all images */
+      height: auto;  /* Maintain aspect ratio */
+    }
+</style>
+    <!-- Features / about blocks -->
+
+    <section class="bg-rust padded projects center hero-pb" id="projects">
+        <h2 class="center test-p-1 hero-title hero-nav"> Testimonials </h2>
+
+        <section class="light-bg text-center p-5p center grid-middle">
+            <div class="grid md:grid-cols-2 p-2">
+
+                <!-- <div class="p-2">
+                    <div class="card light-bg">
+                        <img src="/images/test-2.png" class="profile mx-auto">
+                        <p class="author"> John </p>
+                        <p class="company"> Envato </p>
+                        <p>"Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                            pariatur."</p>
+                        <span> ★ ★ ★ ★ ★ </span>
+                    </div>
+                </div> -->
+
+                <div class="p-1">
+                    <div class="card light-bg">
+                        <img src="/images/test-1.png" class="profile mx-auto" />
+                        <p class="author editable hero-text"> Jane </p>
+                        <p class="company editable hero-text"> Apex Consulting </p>
+                        <p class="editable hero-text super-small-text">
+                            "Thanks to RAMP, my English proficiency has soared, empowering me to confidently lead meetings, close sales, effectively negotiate with clients, and increase contributions to my team's success. Witnessed by colleagues and applauded by superiors, my enhanced business communication skills stand as a testament to RAMP's transformative impact."
+                        </p>
+                        <span> ★ ★ ★ ★ ★ </span>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>

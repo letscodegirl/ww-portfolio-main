@@ -1,0 +1,72 @@
+---
+layout: default
+banner_image: /images/about1.png
+team:
+    -
+        name: Erick Mendoza
+        bio: Founder of RAMP
+        description: >
+            <div style="font-family: mulish, sans-serif; font-size: 18px;
+            line-height: 1.5;"> <p style="font-size: 18px;">I’m Erick Mendoza
+            and I’m originally from San Francisco, California, USA.</p>
+
+            <p style="font-size: 18px;">With over <strong>25 years</strong> of
+            combined experience:</p>
+
+            <ul>
+                <p style="font-size: 18px;"><strong> - 15 years</strong> as a seasoned trainer and educator in Business English, Sales, negotiation, and Business Presentation skills.</p>
+                <p style="font-size: 18px;"><strong> - 10 years</strong>of business sales and management experience in the dynamic landscape of the San Francisco Bay area.</p>
+            <p style="font-size: 18px;"><strong> - University of Illinois,
+            Urbana-Champaign: Master's degree in Management.</strong>
+             -A Master's degree in <strong>Counseling.</strong>  
+            -<strong>Bachelor’s degree</strong> in
+            <strong>Psychology.</strong></p>
+                </ul>
+            <br>
+                <p style="font-size: 18px;">I will utilize this tapestry of experience and academic knowledge to deliver unparalleled training in Business English, sales, and presentations skills to help you succeed. My tailored approach guarantees to elevate and refine your performance to new heights. With tailored training and solutions that matches your needs, success is not just achievable—it's inevitable.</p>
+            </div>
+        profile_image: /images/eprofile.jpeg
+about-video-id: rAOMo5f-pbA
+---
+<section class="tall-60 grid bg-green">
+    <div class="col-5-middle editable padded ">
+        <h2 class="hero-title">Mission &amp; Vision: </h2>
+        <p><strong>RAMP</strong> aims to bridge the gap for non-native English speaking professionals, startsups, and small to mid-size companies, by providing high-quality, industry-specific practical Business English skills training that is accessible only to corporations with dedicated internal trainers. </p>
+        <p>RAMP's mission is to unlock the potential of every business and employees we work with, helping them thrive in today’s competitive global market.</p>
+        <p>By focusing on the needs of your specific industry, and delivering customized, research-backed training, RAMP strives to save you time and money, and become the go-to service for business English communication skills training in the Asia-Pacific region. </p>
+    </div>
+    <div class="col-7 bg-image bg-plant" style="background-image: url('{{page.banner_image}}');">
+
+    </div>
+</section>
+
+<section class="padded">
+    <div class="capped-width">
+
+        {% for person in page.team %}
+
+        <div class="profile-container">
+            <img src="{{ person.profile_image }}" class="profile-image" />
+            <div class="about-section">
+                <h3> {{ person.name }} </h3>
+                <p> <strong> {{ person.bio }} </strong></p>
+                <p> {{person.description }} </p>
+            </div>
+        </div>
+
+        {% endfor %}
+
+    </div>
+</section>
+
+<section class="padded bg-green center">
+    <h2 class="editable hero-title">
+        RAMP Training Video (coming soon)
+    </h2>
+    <!-- <p class="emphasis editable hero-text">
+        RAMP B.E.S.T
+    </p> -->
+    <div class="padded-1">
+        <div class='embed-container'><iframe src='https://www.youtube.com/embed/{{ page.about-video-id }}' frameborder='0' allowfullscreen></iframe></div>
+    </div>
+</section>

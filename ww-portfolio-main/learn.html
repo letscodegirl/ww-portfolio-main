@@ -1,0 +1,76 @@
+---
+layout: default
+banner_image: /images/learn.jpg
+title:
+seo:
+description:
+social_image:
+twitter_card:
+keywords:
+hide-from-google: false
+---
+<section class="tall-60 grid bg-green">
+  <div class="col-7 bg-contact" style="background-image: url('{{page.banner_image}}');">
+
+  </div>
+  <div class="col-5-middle editable padded ">
+      <h2> Learn </h2>
+      <p> </p>
+      <p>At RAMP, we believe that learning is the foundation of all progress. That’s why we are dedicated to providing comprehensive U.S. Business English, sales, presentation skills training, and successful execution of convention events that delivers results. </p>
+  </div>
+</section>
+
+<!-- <section class="padded capped-width">
+  <div class="center editable margin-b-2">
+      <h2>Ready to Ramp Up?</h2>
+      <p> </p>
+      <p>Say goodbye to monotonous lectures. Our interactive sessions ensure you stay engaged and absorb more information. </p>
+  </div>
+
+<div class="table-container editable">
+    <table id="myTable">
+        <thead>
+            <tr>
+                <th>No</th>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Date</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Post Title 1</td>
+                <td>Manager</td>
+                <td>2024-01-08</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Post Title 2</td>
+                <td>Manager</td>
+                <td>2024-01-08</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="table-actions">
+  <input type="text" id="search-input" placeholder="Search..." />
+  <button id="submit-button">Submit</button>
+</div>
+
+</section> -->
+
+<section class="p-5p max-w-screen-2xl mx-auto text-dark-white">
+  <h2 class="serif tracking-wide uppercase text-center text-4xl mb-4"> RAMP Featured Articles </h2>
+  <div class="sm-columns-1 columns-3">
+
+    {% for post in site.posts limit:12 %}
+
+    {% include post-loop-item-mixed-images.html %}
+
+    {% endfor %}
+
+  </div>
+
+</section>

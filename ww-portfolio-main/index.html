@@ -1,0 +1,330 @@
+---
+layout: default
+banner_image_path: /images/mba3.png
+icon1_path: /images/icons/flash.png
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Your Website Title</title>
+  <style>
+    /* Base styles */
+    .padded {
+      padding: 20px;
+    }
+
+    .text-center {
+      text-align: center;
+    }
+
+    /* Responsive styles */
+    @media (max-width: 768px) {
+      .grid-middle {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .col-*,  /* Target all grid columns with class starting with "col-" */
+        .hero-div,
+        .text-background,
+        .text-background-2 {
+        width: 100%;  /* Set width to 100% for smaller screens */
+        padding: 15px;  /* Adjust padding for better spacing */
+      }
+
+      .hero-title {
+        font-size: 1.2em;
+      }
+
+      .hero-text {
+        font-size: 0.9em;
+      }
+
+      .padded-b-2 {
+        padding-bottom: 10px;
+      }
+
+      .bg-image {
+        background-size: cover;
+      }
+
+      .bg-meeting {
+        height: 200px;
+      }
+
+      .bg-plant-2 {
+        height: 300px;
+      }
+
+      .super-small-text {
+        font-size: 0.8em;
+      }
+
+      .hide-sm {  /* Hide elements on small screens */
+        display: none;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .hero-title {
+        font-size: 1.2em;
+      }
+
+      .hero-text {
+        font-size: 0.9em;
+      }
+    }
+
+    /* Image scaling */
+    img {
+      max-width: 100%;  /* Set max-width for all images */
+      height: auto;  /* Maintain aspect ratio */
+    }
+  </style>
+</head>
+<body>
+    <section class="bg-image padded tall-80 grid-middle" style="background-image: url('{{page.banner_image_path}}');">
+        <div class="md:col-8_sm-10 text-background hero-div custom-slided">
+            <h1 class="hero-title editable">
+                Welcome to RAMP
+            </h1>
+            <h2 class="hero-text editable">
+                Business communication skills training! (American English)
+            </h2>
+            <p class="hero-text editable">
+                <em><strong>RAMP (Rapid Advancement for Modern Professionals</strong></em>) is an innovative Business English skills training service that specializes in enhancing the business communication skills new professionals, startups, and small to mid-size companies in the Asia-Pacific rim, offering industry-specific tailored training in business English, sales, presentations, and on the successful execution of overseas convention events.&nbsp;<br /><br /><strong>RAMP</strong>&nbsp;<strong>Business English Skills</strong>&nbsp;<strong>training</strong> will save you time, money, and will assist in the advancement of your career, or the growth of your company by making you more competitive in the global market.&nbsp;<br />
+            </p>
+        </div>
+    </section>
+
+    {% include newsletter-signup.html %}
+
+    <!-- Icon Grid  -->
+    <section class="padded grid center icon-section" id="why-us">
+        <div class="col-12 center padded-b">
+            <h2 class="editable hero-title">
+                Why Choose RAMP
+            </h2>
+        </div>
+        <div class="col-4_sm-6_xs-12">
+            <img class="editable" src="/uploads/icons8-customize-50.png" />
+            <h4 class="editable">
+                Customized Training Solutions that will save you time and money!
+            </h4>
+            <p class="editable hero-text hide-sm">
+                <em> Instead of spending months in generic classes or workshops, <strong>RAMP</strong>&nbsp;will save you time and money by&nbsp;<strong>customizing&nbsp;</strong>and streamlining the training, focusing specifically on what your company needs to succeed, while&nbsp; addressing the challenges and pain points of your industry, to deliver targeted and efficient training that accelerates your path to proficiency.</em>&nbsp;
+            </p>
+        </div>
+        <div class="col-4_sm-6_xs-12">
+            <img class="editable" src="/uploads/strategic.png" srcset="/uploads/strategic.png 150w, /uploads/strategic@2x.png 300w" />
+            <h4 class="editable">
+                Strategic<br />Approach
+            </h4>
+            <p class="editable hero-text hide-sm">
+                &nbsp;<em><strong>RAMP’s strategic approach</strong> involves researching and collaborating closely with your company to understand the industry’s unique challenges and pain points. This guarantees that our training is precisely modified to your needs, delivering results that drive success, whether it’s closing more deals or delivering impactful presentations that resonate with the clients.</em>
+            </p>
+        </div>
+        <div class="col-4_sm-6_xs-12">
+            <img class="editable" src="/uploads/icons8-personal-growth-64.png" />
+            <h4 class="editable">
+                Empowerment &amp; Growth
+            </h4>
+            <p class="editable hero-text hide-sm">
+                <em>With <strong>personalized coaching</strong>, <strong>actionable feedback</strong>, and strategic skill developments,&nbsp;<strong>RAMP</strong> will unlock your potential, propel company growth, enhance your status, and expand your abilities, ensuring that you stay ahead in today’s competitive global market.</em>
+            </p>
+        </div>
+    </section>
+
+ <!-- Dark intro section  -->
+    <section class="grid bg-green padded">
+        <div class="col-7_sm-12 bg-image bg-meeting tall-50">
+
+        </div>
+        <div class="md:col-5_sm-12-middle padded editable">
+            <h2 class="hero-title sm-text-center">RAMP's Target Clients:</h2>
+            <p class="hide-sm"><em><strong>RAMP’s ideal clients are non-native English speaking</strong></em>: </p>
+            <ul>
+                <li>
+                    <p class="hide-sm">New Professionals</p>
+                </li>
+                <li>
+                    <p class="hide-sm">Startups, &amp; Small to mid-size Companies</p>
+                    <p class="hide-sm">that lack internal trainers and need training in Business English conversation, Business English sales, Business English presentation skills, and the successful execution of an overseas business conventions.&nbsp;</p>
+                </li>
+            </ul>
+            <p class="hide-sm"> </p>
+            <p class="hide-sm"><em><strong>Clients are based in the Asia-Pacific Rim.&nbsp;</strong></em></p>
+            <ul>
+                <li>
+                    <p class="hide-sm"> <strong>RAMP's ideal clients need to improve their Business English proficiency to:</strong></p>
+                </li>
+                <li>
+                    <p class="hide-sm"> make sales, </p>
+                </li>
+                <li>
+                    <p class="hide-sm">deliver business presentations, </p>
+                </li>
+                <li>
+                    <p class="hide-sm">attend a business convention </p>
+                </li>
+                <li>
+                    <p class="hide-sm">Elevate company performance</p>
+                </li>
+                <li>
+                    <p class="hide-sm">enhance business operations. </p>
+                    <p class="hide-sm"><strong>RAMP's clients face challenges in:</strong> </p>
+                </li>
+                <li>
+                    <p class="hide-sm">communicating effectively in English, </p>
+                </li>
+                <li>
+                    <p class="hide-sm">lack confidence in business meetings, sales, conventions, presentations, and&nbsp;</p>
+                </li>
+                <li>
+                    <p class="hide-sm">require tailored, focused, time-efficient industry-specific training that delivers results.</p>
+                </li>
+            </ul>
+        </div>
+
+    </section>
+
+    <!-- Grid of services  -->
+    <section class="padded grid">
+        <div class="col-6_xs-12 padded editable">
+            <h4>Key Features:</h4>
+            <p><strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Tailored Business English Training:</strong></p>
+            <ul>
+                <li>
+                    <p>Focused on critical areas such as sales, negotiation, presentation skills, and convention event training. </p>
+                </li>
+                <li>
+                    <p>Customized to the specific needs of your industry, ensuring practical and relevant learning.</p>
+                </li>
+            </ul>
+            <p><strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Remote In-House Consultant:</strong></p>
+            <ul>
+                <li>
+                    <p><strong>RAMP</strong> will serve as a remote trainer for businesses, providing on-demand support and training. </p>
+                </li>
+                <li>
+                    <p>Flexible access to advice and solutions for any business English, sales, convention event, or presentation-related challenges.</p>
+                    <p><strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Personalized Coaching and Feedback:</strong></p>
+                </li>
+                <li>
+                    <p>Employee or team coaching sessions to address unique challenges and goals. </p>
+                </li>
+                <li>
+                    <p>Actionable feedback to help continuously improve skills and confidence.</p>
+                </li>
+            </ul>
+            <p><strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Strategic Skill Development:</strong></p>
+            <ul>
+                <li>
+                    <p>Research-driven and industry-specific training modules.</p>
+                </li>
+                <li>
+                    <p>Client collaboration to understand the business environment, challenges, and pain points, ensuring focused and effective training.</p>
+                </li>
+            </ul>
+            <p><strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Practical Application:</strong></p>
+            <ul>
+                <li>
+                    <p>Emphasis on real-world application of skills.</p>
+                </li>
+                <li>
+                    <p>Practical exercises, role-playing, and simulations to ensure readiness for actual business scenarios.</p>
+                </li>
+            </ul>
+            <p class="hero-text"> </p>
+            <p class="hero-text"> </p>
+        </div>
+
+        <div class="col-6_xs-12 padded editable">
+            <h3>Benefits:</h3>
+            <p><strong>Enhanced Communication:</strong> Clients will learn to communicate confidently and effectively with English-speaking clients and partners.</p>
+            <p><strong>Improved Business Outcomes:</strong> Training designed to help close more deals, deliver impactful presentations, and improve overall business interactions.</p>
+            <p><strong>Career Advancement:</strong> Empowering individuals to excel in their roles, to achieve promotions, and gain recognition within their company.</p>
+            <p><strong>Business Growth:</strong> Supporting startups and small to mid-size companies in improving their operations and expanding their market reach through better communication.</p>
+            <p class="hero-text"> </p>
+        </div>
+        <!-- <div class="col-4_xs-12 padded editable">
+            <h3> For Businesses. </h3>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis libero dolor similique quod voluptatibus vel eos expedita, veniam obcaecati porro earum iusto, officia fuga quae possimus, fugiat illum reprehenderit deserunt.</p>
+        </div> -->
+    </section>
+
+    <section class="bg-image bg-plant-2 padded center tall-70 grid-right" id="services">
+        <div class="col-6_sm-8-middle right text-background-2" data-aos="fade-left">
+            <h2 class="editable hero-title">
+                RAMP's Commitment
+            </h2>
+            <p class="editable hero-text">
+                RAMP is committed to your success. We believe that with the right training and support, every business can reach their full potential. <br /><br />Join us and take the first step towards a brighter, more successful future.
+            </p>
+        </div>
+    </section>
+
+    <!-- Grid of services  -->
+    <section class="padded grid">
+        <div class="col-6_xs-12 padded editable">
+            <h4>RAMP's Motto:</h4>
+            <p></p>
+            <h3><em><strong>"Elevating your Potential and Success"</strong></em></h3>
+            <p class="hero-text"> </p>
+            <p class="hero-text"> </p>
+        </div>
+
+        <div class="col-6_xs-12 padded editable">
+            <h3><strong>Contact Us</strong></h3>
+            <p>Ready to expand your skills and business performance?</p>
+            <p></p>
+            <p><strong>Get in touch with RAMP today</strong> and learn more about our services and how we can help achieve your goals.</p>
+            <p class="hero-text"> </p>
+        </div>
+        <!-- <div class="col-4_xs-12 padded editable">
+            <h3> For Businesses. </h3>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis libero dolor similique quod voluptatibus vel eos expedita, veniam obcaecati porro earum iusto, officia fuga quae possimus, fugiat illum reprehenderit deserunt.</p>
+        </div> -->
+    </section>
+
+    <!-- Features / about blocks -->
+
+    <section class="bg-rust padded projects center hero-pb" id="projects">
+        <h2 class="center test-p-1 hero-title hero-nav"> Testimonials </h2>
+
+        <section class="light-bg text-center p-5p center grid-middle">
+            <div class="grid md:grid-cols-2 p-2">
+
+                <!-- <div class="p-2">
+                    <div class="card light-bg">
+                        <img src="/images/test-2.png" class="profile mx-auto">
+                        <p class="author"> John </p>
+                        <p class="company"> Envato </p>
+                        <p>"Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                            pariatur."</p>
+                        <span> ★ ★ ★ ★ ★ </span>
+                    </div>
+                </div> -->
+
+                <div class="p-1">
+                    <div class="card light-bg">
+                        <img src="/images/test-1.png" class="profile mx-auto" />
+                        <p class="author editable hero-text"> Jane </p>
+                        <p class="company editable hero-text"> Apex Consulting </p>
+                        <p class="editable hero-text super-small-text">
+                            "Thanks to RAMP, my English proficiency has soared, empowering me to confidently lead meetings, close sales, effectively negotiate with clients, and increase contributions to my team's success. Witnessed by colleagues and applauded by superiors, my enhanced business communication skills stand as a testament to RAMP's transformative impact."
+                        </p>
+                        <span> ★ ★ ★ ★ ★ </span>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+
+    </section>
+</body>
+</html>
